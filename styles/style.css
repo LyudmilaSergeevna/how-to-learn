@@ -9,23 +9,389 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* ниже описаны стили всех элементов блока header (шапка сайта)*/
+
+/* общие стили для всего header */
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #f2f2f9;
+  overflow: hidden;
+  display: flex;
+  position: relative;
   /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+/* стили для блока logo */
+.logo {
+  width: 228px;
+  height: 32px;
+  background-image: url(../images/logo_place_header.svg);
+  background-size: cover;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+/* модификатор для блока logo находящегося в header */
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+/* стили для заголовка в header */
+.header__title {
+  width: 730px;
+  margin: auto;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+/* стили для подзаголовка в header */
+.header__subtitle {
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  z-index: 2;
+}
+
+/* стили для ссылки в подзаголовке header */
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+/* стили для главного изображения в header */
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* стили для синего блока в header */
+.header__square-pic {
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 64px;
+}
+
+/* ниже описаны стили для всех элементов блока description */
+
+/* общие стили для всего description */
+.description {
+  min-height: 60%;
+  display: flex;
+}
+
+/* стили для блока с колонками */
+.two-columns {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 80%;
+  min-height: 60%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* стили для первой колонки */
+.two-columns__brief {
+  margin: 0;
+  width: 175px;
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+
+}
+
+/* стили для второй колонки с параграфами */
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  margin: 0;
+}
+
+/* стили для всех параграфов второй колонки */
+.two-columns__paragraph {
+  width: 100%;
+  font-weight: normal;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+/* обращение к идентиф-ру второго параграфа (с тегом <span>) */
+#par2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* стили для <span> */
+.two-columns__span-accent {
+  font-weight: 600;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+/* ниже описаны стили для всех элементов блока digits */
+
+/* общие стили для всего digits */
+.digits {
+  margin-bottom: 100px;
+}
+
+/* стили для заголовка в digits */
+.section-title {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+/* стили для подзаголовка в digits*/
+.section-subtitle {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* стили для блока с таблицей в digits*/
+.table {
+  margin: 0 auto;
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* стили для ячейки (карточки) в таблице */
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  column-gap: 60px;
+}
+
+/* стили для заголовка ячейки */
+.table__heading {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* стили для текста в ячейке */
+.table__text {
+  margin: 0;
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*ниже описаны стили для блока feynman*/
+
+/* общие стили для всего feynman */
+.feynman {
+  height: 890px;
+  background-color: #f2f2f9;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+/* стили для заголовка в feynman */
+.feynman__title {
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 100px;
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+/* стили для подзаголовка в feynman */
+.feynman__subtitle {
+  margin: 0 auto;
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+/* стили для ссылки в блоке feynman */
+.feynman__link {
+  color: #2f80ed;
+  text-decoration: none;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  z-index: 1;
+}
+
+/* стили для изображения в б feynmam */
+.feynman__image {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  z-index: 0;
+}
+
+/*ниже описаны стили для всех элементов блока kaufman*/
+
+/* общие стили для всего блока kaufman */
+.kaufman {
+  padding-top: 90px;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: relative;
+}
+
+/* модификатор для заголовка в kaufman (dark theme) */
+.section-title_theme_dark {
+  color: white;
+}
+
+/* модификатор для подзаголовка в kaufman (dark theme) */
+.section-subtitle_theme_dark {
+  color: white;
+}
+
+/* модификатор для таблицы в kaufman (dark theme) */
+.table_theme_dark {
+  margin-bottom: 90px;
+}
+
+/* модификатор для ячейки в таблице в kaufman (dark theme) */
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
+}
+
+/* модификатор для заголовка ячейки в таблице (dark theme) */
+.table__heading_theme_dark {
+  color: white;
+}
+
+/* модификатор для текста в ячейке в таблице (dark theme) */
+.table__text_theme_dark {
+  color: white;
+}
+
+/* стили для изображения в блоке kaufman */
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: 0;
+}
+
+/* ниже описаны стили для блока footer */
+
+/* общие стили для блока footer (подвал сайта) */
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+/* стили для flex блока с колонками в footer */
+.footer__columns {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* стили для первой колонки из flex блока в footer */
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* модификатор для logo в footer */
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+/* стили для элемента author в footer */
+.footer__author {
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* стили для заголовков второй и третьей колонки в блоке footer */
+.foother__column-heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* стили для блока со списком ссылок (вторая и третья колонки) в footer */
+.footer__column-links {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* стили для ссылок (элементов списка) в блоке footer */
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+
+/* стили для иконок соцсетей в ссылках в footer */
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
