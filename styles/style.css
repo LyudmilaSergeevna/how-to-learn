@@ -92,7 +92,6 @@
 /* общие стили для всего description */
 .description {
   min-height: 60%;
-  display: flex;
 }
 
 /* стили для блока с колонками */
@@ -102,8 +101,10 @@
   margin-bottom: 100px;
   width: 80%;
   min-height: 60%;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
 /* стили для первой колонки */
@@ -121,11 +122,11 @@
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  margin: 0;
 }
 
 /* стили для всех параграфов второй колонки */
 .two-columns__paragraph {
+  margin: 0;
   width: 100%;
   font-weight: normal;
   line-height: 34px;
@@ -258,6 +259,8 @@
 
 /* стили для изображения в б feynmam */
 .feynman__image {
+  width: 867px;
+  height: 637px;
   position: absolute;
   left: 0;
   bottom: -3px;
