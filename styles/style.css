@@ -71,7 +71,7 @@
 }
 
 /* псевдокласс для того чтобы ссылки при наведении на них мышкой подчеркивались */
-a:hover {
+.header__link:hover, .feynman__link:hover, .footer__column-link:hover {
   text-decoration: underline;
 }
 
@@ -353,7 +353,9 @@ a:hover {
   flex-basis: 711px;
   margin: 0;
   padding: 0;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 /* модификатор для logo в footer */
