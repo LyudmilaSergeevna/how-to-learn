@@ -1,0 +1,11 @@
+/* стили для ссылки в подзаголовке header */
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+/* псевдокласс для того чтобы ссылки при наведении на них мышкой подчеркивались */
+.header__link:hover {
+  opacity: .5;
+  transition: .8s linear;
+}

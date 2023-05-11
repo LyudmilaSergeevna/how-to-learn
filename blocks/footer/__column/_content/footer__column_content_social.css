@@ -1,0 +1,8 @@
+/* стили для всего блока третьей колонки со ссылками (Соцсети) */
+.footer__column_content_social {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}

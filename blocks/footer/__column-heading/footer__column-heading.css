@@ -1,0 +1,9 @@
+/* стили для заголовков второй и третьей колонки в блоке footer */
+.footer__column-heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}

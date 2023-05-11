@@ -1,0 +1,4 @@
+/* модификатор для текста в ячейке в таблице (dark theme) */
+.table__text_theme_dark {
+  color: white;
+}

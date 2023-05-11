@@ -1,0 +1,5 @@
+/* модификатор для ячейки в таблице в kaufman (dark theme) */
+.table__cell_theme_dark {
+  width: 200px;
+  margin-top: 80px;
+}

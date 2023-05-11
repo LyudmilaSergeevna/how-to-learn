@@ -1,0 +1,9 @@
+/* стили для подзаголовка в digits*/
+.section-subtitle {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}

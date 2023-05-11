@@ -1,0 +1,13 @@
+/* общие стили для всего header */
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  /* выше установили ограничения для секции */
+}

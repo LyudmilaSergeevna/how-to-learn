@@ -1,0 +1,15 @@
+.khan__buy-link {
+  color: #2f80ed;
+  text-decoration: none;
+  margin-left: 48px;
+  padding: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/* псевдокласс для того чтобы ссылки при наведении на них мышкой подчеркивались */
+.khan__buy-link:hover {
+  opacity: .5;
+  transition: .8s linear;
+}

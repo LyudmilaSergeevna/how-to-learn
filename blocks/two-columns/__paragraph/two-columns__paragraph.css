@@ -1,0 +1,17 @@
+/* стили для всех параграфов второй колонки */
+.two-columns__paragraph {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-weight: normal;
+  line-height: 34px;
+  font-size: 24px;
+  margin-bottom: 30px;
+
+}
+
+/* псевдокласс последнего параграфа второй колонки */
+.two-columns__paragraph:last-child {
+  margin: 0;
+  padding: 0;
+}

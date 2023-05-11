@@ -1,0 +1,7 @@
+/* общие стили для блока footer (подвал сайта) */
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color: white;
+  display: flex; /* чтобы было как на макете (блок footer__columns на всю высоту футера) */
+}
