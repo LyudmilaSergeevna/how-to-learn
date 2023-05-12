@@ -1,0 +1,12 @@
+/* стили для изображения в б feynmam */
+/* вставлено именно изображением потому что
+для фонового не указать alt, а по брифу это обязательно*/
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
